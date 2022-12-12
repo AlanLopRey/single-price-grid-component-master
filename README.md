@@ -34,8 +34,8 @@ mobile
 
 ### Links
 
-- Solution URL: [Solution URL here]()
-- Live Site URL: [Live site URL here]()
+- Solution URL: [Solution URL here](https://github.com/AlanLopRey/single-price-grid-component-master)
+- Live Site URL: [Live site URL here](https://alanloprey.github.io/single-price-grid-component-master/)
 
 ## My process
 
