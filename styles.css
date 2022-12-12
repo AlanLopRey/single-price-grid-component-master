@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+/* RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 110vh;
+  margin: 2rem auto;
+  background-color: hsl(204deg, 43%, 93%);
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 19.6875rem;
+  grid-template-rows: 16.87rem repeat(2, 14.375rem);
+  font-family: "Karla", sans-serif;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.article {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.article__h2 {
+  font-size: 1.25em;
+  font-weight: 700;
+  color: hsl(204deg, 43%, 93%);
+}
+.article__p {
+  font-size: 0.875em;
+  color: hsl(204deg, 43%, 93%);
+}
+.article__price {
+  font-size: 1.7em;
+  color: hsl(204deg, 43%, 93%);
+  display: flex;
+  font-weight: 700;
+}
+.article__price--span {
+  font-size: 0.6em;
+  align-self: center;
+  margin-left: 0.625rem;
+  font-weight: 400;
+  color: hsl(216deg, 22%, 70%);
+}
+.article__button {
+  width: 16.5625rem;
+  height: 3.125rem;
+  font-size: 1em;
+  font-weight: 700;
+  background-color: hsl(71deg, 73%, 54%);
+  border: 1px solid hsl(71deg, 73%, 54%);
+  border-radius: 0.4375rem;
+  color: white;
+}
+
+.community {
+  background-color: white;
+}
+.community__h2 {
+  color: hsl(179deg, 62%, 43%);
+}
+.community__p {
+  color: hsl(216deg, 22%, 70%);
+}
+.community__span {
+  font-weight: 700;
+  color: hsl(71deg, 73%, 54%);
+}
+
+.subscription {
+  background-color: hsl(179deg, 62%, 43%);
+}
+.subscription__p {
+  margin-bottom: 1rem;
+  color: hsl(204deg, 43%, 93%);
+}
+
+.why-us {
+  background-color: hsla(179deg, 62%, 50%, 0.819);
+}
+.why-us__p {
+  margin-right: 3.4375rem;
+  margin-top: 0.625rem;
+}
+
+@media screen and (min-width: 900px) {
+  .main {
+    grid-template-columns: repeat(2, 20rem);
+    grid-template-rows: 13.75rem 16.25rem;
+  }
+  .article {
+    padding: 2.5rem;
+  }
+  .article__button {
+    width: 15rem;
+  }
+  .community {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .subscription {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .why-us {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
