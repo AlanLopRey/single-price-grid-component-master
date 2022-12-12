@@ -104,7 +104,12 @@ body {
 
 //! DESKTOP
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1440px) {
+  body {
+    min-height: 100vh;
+    margin: 0 auto;
+  }
+
   .main {
     grid-template-columns: repeat(2, 20rem);
     grid-template-rows: 13.75rem 16.25rem;
